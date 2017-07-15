@@ -60,7 +60,9 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</div><!-- /events -->
+
+
 					</div>
 				</div><!-- /content-wrap -->
 

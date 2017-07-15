@@ -90,8 +90,8 @@
     var events = new Vue({
         el: '#app',
         data: {
-            eventLocation: '9, 14', // Harris Center, University
-            eventCategory: '6', // Orientation
+            eventLocation: '14', // University
+            eventCategory: '5, 6', // Orientation, Student Ambassadors
             eventsCount: null,
             events: null
         },
