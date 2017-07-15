@@ -290,14 +290,14 @@ p {
 		}
 	}
 
-	&:last-child {
-		border-bottom: 0;
-	}
-
 	&:hover {
 		h3 {
 			color: $orange;
 		}
+	}
+
+	&:last-child {
+		border-bottom: 0;
 	}
 }
 

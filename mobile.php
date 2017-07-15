@@ -23,6 +23,7 @@
 							<a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
 						</div><!-- /icon-list -->
 					</nav><!-- /menu -->
+
 					<button id="close-button" class="close-button">Close Menu</button>
 				</div><!-- /menu-wrap -->
 
@@ -45,22 +46,20 @@
 						</div>
 
 						<div class="events">
-							<div v-for="event in events">
-								<a href="#" target="_blank" class="event">
-									<h3 class="event-title"><div v-html="event.title.rendered"></div></h3>
-									<span class="event-meta">
-										<span class="time">
-											<i class="fa fa-clock-o" aria-hidden="true"></i>
-											<span class="time-text">{{ event.acf.event_start_time }}</span>
-										</span>
-										<span class="sep">|</span>
-										<span class="location">
-											<i class="fa fa-map-marker" aria-hidden="true"></i>
-											<span class="location-text">Main Auditorium</span>
-										</span>
+							<a v-for="event in events" class="event">
+								<h3 class="event-title"><div v-html="event.title.rendered"></div></h3>
+								<span class="event-meta">
+									<span class="time">
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										<span class="time-text">{{ event.acf.event_start_time }}</span>
 									</span>
-								</a>
-							</div>
+									<span class="sep">|</span>
+									<span class="location">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<span class="location-text">{{ event.location }}</span>
+									</span>
+								</span>
+							</a>
 						</div>
 					</div>
 				</div><!-- /content-wrap -->
